@@ -1,0 +1,22 @@
+package abcd;
+
+public class rev_num {
+public static void main(String[] args) {
+	int n = 5681, rem, rev=0;
+	int temp = n;
+	
+//	while(n!=0) {
+	for(;n!=0;){
+		rem = n % 10;
+		rev = rev*10 + rem;
+		n = n/10;
+	}
+	System.out.println("The reverse of number is :" +rev);
+	if(temp == rev) {
+		System.out.println(temp +" is a palindrome number");
+	}
+	else {
+		System.out.println(temp +" is not a palindrome number");
+	}
+}
+}
