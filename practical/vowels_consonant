@@ -1,0 +1,24 @@
+package abcd;
+
+import java.util.Scanner;
+
+public class StringEg {
+public static void main(String[] args) {
+	String s;
+	int vowel=0, consonant=0;
+	System.out.println("Enter sentence to no. of vowels: ");
+	Scanner sc = new Scanner(System.in);
+	s=sc.nextLine();
+	for(int i=0; i<s.length(); i++) {
+		char ch = s.charAt(i);
+		if((ch == 'a'|| ch =='A') || (ch == 'e'|| ch== 'E') || (ch == 'i' ||ch == 'I') || (ch == 'o'||ch =='O') || (ch == 'u'||ch =='U')) {
+			vowel++;
+		}
+		else {
+			consonant++;
+		}
+	}
+	System.out.println("no of vowels: " +vowel);
+	System.out.println("no of consonant: " +consonant);
+}
+}
